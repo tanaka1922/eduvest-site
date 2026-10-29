@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EduVest Technologies | Education × AI</title>
+<meta name="description" content="30 years in the classroom. Learning apps, LINE and website systems, office automation and AI training, built from a teacher’s point of view.">
+<meta property="og:title" content="EduVest Technologies | Education × AI">
+<meta property="og:description" content="30 years in the classroom. Learning apps, LINE and website systems, office automation and AI training, built from a teacher’s point of view.">
+<meta property="og:type" content="website">
+<link rel="alternate" hreflang="ja" href="/">
+<link rel="alternate" hreflang="en" href="/en/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&amp;family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0}
+.ev{--navy:#14243B;--paper:#F6F4EE;--teal:#1C8C7A;--teal-d:#167060;--mint:#7FD1C2;--ink2:#3B4A63;--line:#DDD7C9;background:var(--paper);color:var(--navy);font-family:'Noto Sans JP',sans-serif;font-size:16px;line-height:1.8}
+.ev a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding-left:clamp(16px,4vw,32px);padding-right:clamp(16px,4vw,32px)}
+.mincho{font-family:'Shippori Mincho B1',serif;font-weight:800;letter-spacing:0.03em}
+.eyebrow{font-size:12px;letter-spacing:0.28em;font-weight:700;color:var(--teal)}
+.h2{margin:0;font-size:clamp(28px,4.6vw,44px);line-height:1.35;text-wrap:balance}
+.lead{margin:0;color:var(--ink2);max-width:36em}
+.sec{padding-block:clamp(56px,8vw,104px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:0 26px;border-radius:2px;text-decoration:none;font-weight:700;letter-spacing:0.04em}
+.btn-teal{background:var(--teal);color:#FFFFFF !important}
+.btn-ghost-l{border:1px solid rgba(246,244,238,0.55);color:#F6F4EE !important}
+.btn-ghost{border:1px solid var(--navy);color:var(--navy) !important}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(24px,4vw,40px)}
+.pic{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:top;display:block;background:#FFFFFF;border:1px solid var(--line);box-sizing:border-box}
+.tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:0.08em;padding:2px 10px;border-radius:2px}
+.tag-own{background:#E3F2EE;color:var(--teal-d)}
+.tag-client{background:#FBEFDD;color:#8A540C}
+details{border-top:1px solid var(--line);padding-top:8px}
+summary{cursor:pointer;font-size:14px;font-weight:700;color:var(--teal-d);list-style:none;min-height:32px;display:flex;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"＋";margin-left:8px}
+details[open] summary::after{content:"－"}
+details p{margin:6px 0 0;font-size:14px;color:var(--ink2)}
+.need{background:#FFFFFF;border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;gap:14px}
+.need ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.need li{display:flex;gap:10px;align-items:flex-start;font-weight:500}
+.need li::before{content:"";flex:0 0 8px;height:8px;margin-top:10px;background:var(--teal);border-radius:50%}
+.can{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media (max-width:640px){.can{grid-template-columns:repeat(2,1fr)}}
+.can div{background:#FFFFFF;border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;gap:12px;padding:22px 10px 0;text-align:center}
+.can svg{width:44px;height:44px;stroke:var(--navy);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.can span{display:block;width:100%;box-sizing:border-box;background:var(--teal);color:#FFFFFF;font-weight:700;font-size:14px;padding:8px 4px}
+.can a.v{display:block;width:100%;font-size:12px;font-weight:700;color:var(--teal-d);text-decoration:none;padding:8px 4px;border-top:1px solid var(--line)}
+.vids{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px}
+.vid{display:flex;flex-direction:column;gap:12px;background:var(--navy);color:#F6F4EE !important;text-decoration:none;padding:20px;min-height:150px}
+.vid .play{width:44px;height:44px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center}
+.vid b{font-size:16px;line-height:1.5}
+.vid small{color:var(--mint);font-size:12px;letter-spacing:0.08em}
+.can p{margin:0;font-size:13px;line-height:1.5;color:var(--ink2);padding:0 8px;min-height:3em}
+.prof{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px}
+.prof a{display:flex;flex-direction:column;gap:2px;padding:16px 18px;background:#FFFFFF;border:1px solid var(--line);border-left:4px solid var(--teal);text-decoration:none}
+.prof-g{grid-column:1/-1;font-size:12px;font-weight:700;letter-spacing:0.16em;color:var(--teal-d);margin-top:8px}
+.prof b{font-size:16px}
+.prof small{font-size:12px;color:var(--ink2)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:12px;counter-reset:s}
+.steps div{background:#FFFFFF;border-top:3px solid var(--teal);padding:16px;display:flex;flex-direction:column;gap:4px}
+.steps b{font-size:17px}
+.steps small{font-size:13px;color:var(--ink2);line-height:1.6}
+.float{position:fixed;right:16px;bottom:16px;z-index:20;box-shadow:0 8px 24px rgba(20,36,59,0.25)}
+.collage{position:relative;aspect-ratio:5/4;width:100%}
+.collage img{position:absolute;border:4px solid #FFFFFF;box-shadow:0 14px 30px rgba(0,0,0,0.35);background:#FFFFFF;object-fit:cover;object-position:top}
+</style>
+<style>.zoom{position:fixed;inset:0;background:rgba(20,36,59,.92);display:flex;align-items:center;justify-content:center;padding:16px;z-index:50;cursor:zoom-out} .zoom img{max-width:100%;max-height:100%;background:#fff} section img{cursor:zoom-in} @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}} html{scroll-behavior:smooth}</style>
+</head>
+<body>
+<div class="ev">
+
+  <header style="background:var(--navy);color:#F6F4EE">
+    <div class="wrap" style="padding-block:16px;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between">
+      <div style="display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:0.06em">
+        <svg width="24" height="24" viewBox="0 0 64 64" fill="none" stroke="#7FD1C2" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 8h16M27 8v16L13 48c-2 3 0 8 4 8h30c4 0 6-5 4-8L37 24V8"></path><path d="M18 42h28"></path></svg>
+        EduVest Technologies
+      </div>
+      <nav aria-label="Menu" style="display:flex;flex-wrap:wrap;gap:18px;font-size:14px">
+        <a href="#needs" style="color:#F6F4EE;text-decoration:none">Needs</a>
+        <a href="#works" style="color:#F6F4EE;text-decoration:none">Work</a>
+        <a href="#price" style="color:#F6F4EE;text-decoration:none">Pricing</a>
+        <a href="#flow" style="color:#F6F4EE;text-decoration:none">Process</a>
+        <a href="#about" style="color:#F6F4EE;text-decoration:none">About</a>
+        <a href="#lab" style="color:#F6F4EE;text-decoration:none">Lab</a>
+        <a href="/" lang="ja" style="color:#14243B;background:#7FD1C2;text-decoration:none;font-weight:700;padding:2px 12px;border-radius:999px">日本語</a>
+      </nav>
+    </div>
+  </header>
+
+  <section style="background:var(--navy);color:#F6F4EE;overflow:hidden">
+    <div class="wrap" style="padding-block:clamp(40px,7vw,88px)">
+      <div class="grid" style="align-items:center">
+        <div style="display:flex;flex-direction:column;gap:22px">
+          <div class="eyebrow" style="color:var(--mint)">EDUCATION × AI</div>
+          <h1 class="mincho" style="margin:0;font-size:clamp(32px,5.2vw,64px);line-height:1.4;text-wrap:balance">30 years in the classroom.<br>One year with AI.<br>Here is what I built.</h1>
+          <p style="margin:0;font-size:clamp(17px,2vw,20px);font-weight:700;color:#FFFFFF;border-left:4px solid var(--teal);padding-left:14px">30 years teaching / 6 learning apps built / 2,000 math problems</p>
+          <p style="margin:0;color:#C9D3DF;max-width:30em">Learning apps, LINE and website systems, office automation. Built from a teacher’s point of view, around the people who use them.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:12px">
+            <a href="https://www.upwork.com/freelancers/~01045739c29ab7858e" class="btn btn-teal">Contact me</a>
+            <a href="#works" class="btn btn-ghost-l">See the work</a>
+          </div>
+        </div>
+        <div class="collage" aria-label="Screens of my apps">
+          <img src="../img/apps-150.png" alt="History and civics study apps" style="left:0;top:4%;width:62%;aspect-ratio:3/2;transform:rotate(-3deg)">
+          <img src="../img/shot-mbd.png" alt="Math Battle Dojo" style="right:4%;top:0;width:30%;aspect-ratio:9/16;transform:rotate(4deg)">
+          <img src="../img/apps-exam.png" alt="Exam prep apps" style="left:8%;bottom:2%;width:56%;aspect-ratio:3/2;transform:rotate(2deg)">
+          <img src="../img/shot-aia.png" alt="AI Adventure Game" style="right:0;bottom:6%;width:30%;aspect-ratio:9/16;transform:rotate(-4deg)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="needs" class="sec">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:clamp(28px,4vw,40px)">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="eyebrow">What you might need</div>
+        <h2 class="mincho h2">Start from what you want to do</h2>
+      </div>
+      <div class="grid">
+        <div class="need">
+          <span class="tag tag-own" style="align-self:flex-start">Individuals</span>
+          <ul><li>Learn to use AI from the basics</li><li>Try AI for work and daily life</li><li>Learn at home, at your own pace</li></ul>
+          <a href="#price" style="font-size:14px;font-weight:700;color:var(--teal-d)">1-on-1 lessons (about ¥2,500 / hour) →</a>
+        </div>
+        <div class="need">
+          <span class="tag tag-own" style="align-self:flex-start">Schools, shops and clubs</span>
+          <ul><li>Handle notices, attendance and fees on a phone</li><li>Update your website and social media yourself</li><li>Simplify bookings and records with a tablet</li></ul>
+          <a href="#works" style="font-size:14px;font-weight:700;color:var(--teal-d)">See the LINE × website project →</a>
+        </div>
+        <div class="need">
+          <span class="tag tag-client" style="align-self:flex-start">Companies</span>
+          <ul><li>Help your team work with AI</li><li>Automate invoice and document checks</li><li>Cut spreadsheet copying and tallying</li></ul>
+          <a href="#price" style="font-size:14px;font-weight:700;color:var(--teal-d)">Quoted case by case →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="background:#FFFFFF;border-block:1px solid var(--line)">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:clamp(28px,4vw,40px)">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="eyebrow">WHAT WE MAKE</div>
+        <h2 class="mincho h2">What I build</h2>
+      </div>
+      <div class="can">
+        <div><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="14" y="4" width="20" height="40" rx="3"></rect><path d="M21 38h6M19 14h10M19 20h10M19 26h6"></path></svg><p>Questions and explanations for where students get stuck</p><span>Learning apps</span><a class="v" href="https://www.youtube.com/watch?v=qMjjunxlhzo">▶ 1-min video</a></div>
+        <div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 10h32v22H22l-8 7v-7H8z"></path><path d="M15 18h18M15 24h11"></path></svg><p>Entry point for notices, bookings and inquiries</p><span>LINE Official</span><a class="v" href="https://www.youtube.com/watch?v=7iAfem-RhDg">▶ 1-min video</a></div>
+        <div><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="8" width="38" height="30" rx="2"></rect><path d="M5 15h38M10 22h14M10 28h10M28 22h10v10H28z"></path></svg><p>Delivered so you can update it yourself</p><span>Websites</span><a class="v" href="https://www.youtube.com/watch?v=GK0YpVRTMvo">▶ 1-min video</a></div>
+        <div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 6h20l8 8v28H10z"></path><path d="M30 6v8h8M16 22h16M16 28h16M16 34h9"></path></svg><p>Matched to grade and curriculum</p><span>Teaching materials</span><a class="v" href="https://www.youtube.com/watch?v=zBu1aFFSEnA">▶ 1-min video</a></div>
+        <div><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="8" width="36" height="32" rx="2"></rect><path d="M6 18h36M18 8v32M30 8v32M6 29h36"></path></svg><p>Automated copying, tallying and alerts</p><span>Office automation</span><a class="v" href="https://www.youtube.com/watch?v=eUXMIg_elXQ">▶ 1-min video</a></div>
+        <div><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="7" width="38" height="34" rx="2"></rect><path d="M12 33V24M20 33V17M28 33v-7M36 33V13"></path></svg><p>The numbers you decide with, on one screen</p><span>Dashboards</span><a class="v" href="https://www.youtube.com/watch?v=CYBck5SvI7Q">▶ 1-min video</a></div>
+        <div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 6h22l8 8v28H8z"></path><circle cx="28" cy="30" r="7"></circle><path d="M33 35l7 7M14 16h12M14 22h8"></path></svg><p>Flags items to check and masks personal data</p><span>AI document reading</span><a class="v" href="https://www.youtube.com/watch?v=fFlE6MHsogE">▶ 1-min video</a></div>
+        <div><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="16" r="6"></circle><circle cx="33" cy="16" r="6"></circle><path d="M6 40c1-7 5-11 11-11s10 4 11 11M28 31c1-1 3-2 5-2 6 0 10 4 11 11"></path></svg><p>Hands-on use cases by department</p><span>AI training</span><a class="v" href="https://www.youtube.com/watch?v=NY__kjg3RVY">▶ 1-min video</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="works" class="sec">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:clamp(28px,4vw,40px)">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="eyebrow">WORKS</div>
+        <h2 class="mincho h2">Work</h2>
+        <p class="lead">Real screens and documents. Client work is shown without client names.</p>
+      </div>
+      <div class="grid">
+        <article style="display:flex;flex-direction:column;gap:10px"><img class="pic" src="../img/apps-150.png" alt="History and civics study apps"><span class="tag tag-own" style="align-self:flex-start">Own project</span><h3 class="mincho" style="margin:0;font-size:22px">Study apps built from class handouts</h3><p style="margin:0;color:var(--ink2)">Class handouts turned into 150-question apps, unit by unit.</p></article>
+        <article style="display:flex;flex-direction:column;gap:10px"><img class="pic" src="../img/apps-exam.png" alt="Exam prep apps"><span class="tag tag-own" style="align-self:flex-start">Own project</span><h3 class="mincho" style="margin:0;font-size:22px">Exam prep apps for each student</h3><p style="margin:0;color:var(--ink2)">Ten questions a day and review, set to one student’s goal.</p></article>
+        <article style="display:flex;flex-direction:column;gap:10px"><img class="pic" src="../img/shot-mbd.png" alt="Math Battle Dojo"><span class="tag tag-own" style="align-self:flex-start">Own project</span><h3 class="mincho" style="margin:0;font-size:22px">Math Battle Dojo</h3><p style="margin:0;color:var(--ink2)">2,000 junior high math problems on a phone.</p><a href="https://math-battle-dojo.vercel.app" style="font-size:14px;font-weight:700;color:var(--teal-d)">Open the app →</a></article>
+        <article style="display:flex;flex-direction:column;gap:10px"><img class="pic" src="../img/shot-aia.png" alt="AI Adventure Game"><span class="tag tag-own" style="align-self:flex-start">Teaching demo</span><h3 class="mincho" style="margin:0;font-size:22px">AI Adventure Game</h3><p style="margin:0;color:var(--ink2)">A game that teaches how to give instructions to AI.</p><a href="https://ai-adventure-lesson1.vercel.app" style="font-size:14px;font-weight:700;color:var(--teal-d)">Open the demo →</a></article>
+        <article style="display:flex;flex-direction:column;gap:10px"><img class="pic" src="../img/no36.png" alt="LINE Official menu screen" style="object-position:bottom"><span class="tag tag-own" style="align-self:flex-start">For a club I run</span><h3 class="mincho" style="margin:0;font-size:22px">LINE × website for club communication</h3><p style="margin:0;color:var(--ink2)">From notices to fee checks, all on a phone.</p></article>
+        <article style="display:flex;flex-direction:column;gap:10px"><img class="pic" src="../img/add05.png" alt="Math answer explanations"><span class="tag tag-own" style="align-self:flex-start">Own teaching material</span><h3 class="mincho" style="margin:0;font-size:22px">Math answer and explanation sheets</h3><p style="margin:0;color:var(--ink2)">Drafted with AI, finished by a teacher.</p></article>
+        <article style="display:flex;flex-direction:column;gap:10px"><img class="pic" src="../img/no213.png" alt="Math and science question writing" style="object-fit:contain"><span class="tag tag-client" style="align-self:flex-start">Client project (completed)</span><h3 class="mincho" style="margin:0;font-size:22px">Math and science questions, written and checked</h3><p style="margin:0;color:var(--ink2)">AI-drafted questions, checked by a teacher before delivery.</p></article>
+        <article style="display:flex;flex-direction:column;gap:10px"><img class="pic" src="../img/no147.png" alt="Posting automation screen" style="object-fit:contain"><span class="tag tag-client" style="align-self:flex-start">Client project (completed)</span><h3 class="mincho" style="margin:0;font-size:22px">Social posting automation (with approval)</h3><p style="margin:0;color:var(--ink2)">Only posts a person has approved go out.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="videos" class="sec" style="padding-top:0">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:clamp(24px,4vw,36px)">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="eyebrow">VIDEOS</div>
+        <h2 class="mincho h2">Watch in one minute</h2>
+        <p class="lead">Each service, explained in a video of about a minute (Japanese).</p>
+      </div>
+      <div class="vids">
+        <a class="vid" href="https://www.youtube.com/watch?v=qMjjunxlhzo"><span class="play"><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4l13 8-13 8z"></path></svg></span><b>Learning apps built from the classroom</b><small>1:17</small></a>
+        <a class="vid" href="https://www.youtube.com/watch?v=NY__kjg3RVY"><span class="play"><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4l13 8-13 8z"></path></svg></span><b>AI training that sticks, in 5 steps</b><small>0:40</small></a>
+        <a class="vid" href="https://www.youtube.com/watch?v=7iAfem-RhDg"><span class="play"><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4l13 8-13 8z"></path></svg></span><b>Setting up LINE Official for repeat customers</b><small>0:41</small></a>
+        <a class="vid" href="https://www.youtube.com/watch?v=fFlE6MHsogE"><span class="play"><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4l13 8-13 8z"></path></svg></span><b>AI document reading, checks and masking</b><small>0:39</small></a>
+      </div>
+      <a href="https://www.youtube.com/@EduVest_CFDFX" class="btn btn-ghost" style="align-self:flex-start">See all 26 videos on YouTube</a>
+    </div>
+  </section>
+
+  <section id="price" class="sec" style="background:#FFFFFF;border-block:1px solid var(--line)">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:clamp(28px,4vw,40px)">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="eyebrow">PRICE</div>
+        <h2 class="mincho h2">Pricing guide</h2>
+      </div>
+      <div class="grid">
+        <div style="border:1px solid var(--line);padding:24px;display:grid;gap:12px;background:var(--paper)">
+          <img class="pic" src="../img/no106.png" alt="Teaching side by side">
+          <span class="tag tag-own" style="justify-self:start">Individuals</span>
+          <h3 style="margin:0;font-size:20px">1-on-1 AI lessons</h3>
+          <div><span style="font-size:13px;color:var(--ink2)">About, per hour</span> <span class="mincho" style="font-size:clamp(40px,5vw,52px);line-height:1.1">2,500</span><span style="font-size:18px;font-weight:700"> yen</span></div>
+          <p style="margin:0;font-size:14px;color:var(--ink2)">In-person in the Tokai area of Japan, or online.</p>
+          <details><summary>Details</summary><p>Travel within 30 minutes one way is free; beyond that, travel costs apply.</p></details>
+          <a href="https://lin.ee/ywEmWNR" class="btn btn-teal" style="justify-self:start">Book a lesson</a>
+        </div>
+        <div style="border:1px solid var(--line);padding:24px;display:grid;gap:12px;background:var(--paper)">
+          <img class="pic" src="../img/no102.png" alt="A planning meeting">
+          <span class="tag tag-client" style="justify-self:start">Companies</span>
+          <h3 style="margin:0;font-size:20px">Training, development and automation</h3>
+          <div class="mincho" style="font-size:clamp(28px,4vw,36px);line-height:1.2">Quoted per project</div>
+          <p style="margin:0;font-size:14px;color:var(--ink2)">I quote based on the scope.</p>
+          <a href="https://www.upwork.com/freelancers/~01045739c29ab7858e" class="btn btn-ghost" style="justify-self:start">Contact me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="flow" class="sec">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:clamp(24px,4vw,36px)">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="eyebrow">FLOW</div>
+        <h2 class="mincho h2">From first talk to handover</h2>
+        <p class="lead">Every delivery comes with a written manual.</p>
+      </div>
+      <img src="../img/ev-hp-02-en.png" alt="Listen, design, build, check, hand over" style="width:100%;max-width:960px;display:block;background:#FFFFFF;border:1px solid var(--line);padding:16px;box-sizing:border-box">
+      <div class="steps">
+        <div><b>1 Listen</b><small>Tell me what you want to do.</small></div>
+        <div><b>2 Design</b><small>We confirm screens and steps as diagrams.</small></div>
+        <div><b>3 Build</b><small>I build it, with AI in the loop.</small></div>
+        <div><b>4 Check</b><small>We test it together and fix what needs fixing.</small></div>
+        <div><b>5 Hand over</b><small>Delivered with a manual.</small></div>
+      </div>
+      <p style="margin:0;font-size:14px;color:var(--ink2)">Timelines depend on scope. I will give you one when we talk.</p>
+    </div>
+  </section>
+
+  <section id="about" class="sec" style="background:#FFFFFF;border-block:1px solid var(--line)">
+    <div class="wrap">
+      <div class="grid" style="align-items:start">
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <div class="eyebrow">ABOUT</div>
+          <h2 class="mincho h2">Who builds it</h2>
+          <div style="display:flex;align-items:center;gap:16px">
+            <div class="mincho" aria-hidden="true" style="flex:0 0 72px;height:72px;border-radius:50%;background:var(--navy);color:#F6F4EE;display:flex;align-items:center;justify-content:center;font-size:30px">S</div>
+            <div><div class="mincho" style="font-size:26px;line-height:1.3">Seiichi Tanaka</div><div style="font-size:13px;color:var(--ink2)">Founder, EduVest Technologies / Toyota, Aichi, Japan</div></div>
+          </div>
+          <p style="margin:0;color:var(--ink2)">Thirty years in education: classroom and 1-on-1 teaching, running a prep school, hiring and training teachers, managing a correspondence high school campus, and leading a city learning-support program. Since 2023 I have been turning the manual work I struggled with into systems, using AI.</p>
+          <p class="mincho" style="margin:0;font-size:20px;line-height:1.6;border-left:4px solid var(--teal);padding-left:14px">If it can’t be handed over, it isn’t finished.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:0">
+          <div style="display:grid;grid-template-columns:7.5em 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line)"><b style="font-size:14px">1995〜2006</b><span>Cram school teaching, prep school principal, teacher hiring and training</span></div>
+          <div style="display:grid;grid-template-columns:7.5em 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line)"><b style="font-size:14px">2006〜</b><span>Correspondence high school campus management; lead of a city learning-support program</span></div>
+          <div style="display:grid;grid-template-columns:7.5em 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line)"><b style="font-size:14px">2018〜</b><span>Professional tutor for university entrance exams, still teaching</span></div>
+          <div style="display:grid;grid-template-columns:7.5em 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line)"><b style="font-size:14px">2023〜</b><span>Started AI-assisted development as EduVest: automation, web and learning apps for clients in Japan and abroad</span></div>
+          <div style="display:grid;grid-template-columns:7.5em 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line)"><b style="font-size:14px">2026</b><span>Ran an in-house Claude Code workshop (about 20 people, mostly non-developers)</span></div>
+          <div style="display:grid;grid-template-columns:7.5em 1fr;gap:12px;padding:14px 0;border-block:1px solid var(--line)"><b style="font-size:14px">Education</b><span>Shinshu University, Faculty of Education / Teaching licenses (elementary to high school)</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lab" style="background:var(--navy);color:#F6F4EE" class="sec">
+    <div class="wrap">
+      <div class="grid" style="align-items:center">
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <div class="eyebrow" style="color:var(--mint)">AI TRADE LAB</div>
+          <h2 class="mincho h2">EduVest<br>AI Trade Lab</h2>
+          <p style="margin:0;color:#C9D3DF">Learning how AI changes trading by testing it. Successes and failures are both on the record (in Japanese).</p>
+          <div style="display:flex;flex-wrap:wrap;gap:12px"><a href="https://lin.ee/ywEmWNR" class="btn" style="background:#06C755;color:#FFFFFF">Follow on LINE</a><a href="https://note.com/eduvest/m/ma07f9bfd667f" class="btn btn-ghost-l">Research notes</a><a href="https://jp.tradingview.com/u/EduVest_doro/" class="btn btn-ghost-l">TradingView</a></div>
+        </div>
+        <a href="https://note.com/eduvest/n/n6b90587e8daf"><img src="../img/lab-en.png" alt="AI Trade Research Note No.03" style="width:100%;display:block"></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="profiles" class="sec" style="padding-bottom:0">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:clamp(20px,3vw,28px)">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="eyebrow">PROFILES</div>
+        <h2 class="mincho h2">Profiles</h2>
+        <p class="lead">Client history, reviews and public code are on each site.</p>
+      </div>
+      <div class="prof">
+        <div class="prof-g">Japan</div>
+        <a href="https://coconala.com/users/4786813"><b>coconala</b><small>Portfolio and buyer reviews</small></a>
+        <a href="https://www.lancers.jp/profile/EDUVEST"><b>Lancers</b><small>Portfolio and job history</small></a>
+        <a href="https://crowdworks.jp/public/employees/6848836"><b>CrowdWorks</b><small>Profile and history</small></a>
+        <a href="https://jmty.jp/profiles/65cde31d370a68108232d19a"><b>Jimoty</b><small>1-on-1 lessons in the Tokai area</small></a>
+        <div class="prof-g">Overseas</div>
+        <a href="https://www.upwork.com/freelancers/~01045739c29ab7858e"><b>Upwork</b><small>Work with overseas clients</small></a>
+        <a href="https://contra.com/doro_1922_67qff0v0"><b>Contra</b><small>Portfolio and profile</small></a>
+        <a href="https://www.fiverr.com/eduvest"><b>Fiverr</b><small>Services</small></a>
+        <a href="https://www.mql5.com/en/users/doro1922"><b>MQL5</b><small>MT4 / MT5 development</small></a>
+        <div class="prof-g">Side-work platforms</div>
+        <div style="display:flex;flex-direction:column;gap:2px;padding:16px 18px;background:#FFFFFF;border:1px solid var(--line);border-left:4px solid var(--line)"><b style="font-size:16px">Fukugyo Cloud</b><small style="font-size:12px;color:var(--ink2)">Scouting by companies (no public page)</small></div>
+        <a href="https://goworkship.com/profile/84864"><b>Workship</b><small>Profile</small></a>
+        <a href="https://sokudan.work/top/pros/85008"><b>SOKUDAN</b><small>Profile</small></a>
+        <a href="https://youtrust.jp/users/420b4cb681f4fd01992bf8d964499a9d"><b>YOUTRUST</b><small>Career</small></a>
+        <div class="prof-g">Content and code</div>
+        <a href="https://github.com/tanaka1922"><b>GitHub</b><small>Public code</small></a>
+        <a href="https://note.com/eduvest"><b>note</b><small>Research notes (Japanese)</small></a>
+        <a href="https://www.youtube.com/@EduVest_CFDFX"><b>YouTube</b><small>1-minute service videos</small></a>
+        <a href="https://jp.tradingview.com/u/EduVest_doro/"><b>TradingView</b><small>Published indicators for testing</small></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="sec">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:16px;align-items:flex-start">
+      <h2 class="mincho h2">Tell me what you need</h2>
+      <p class="lead">For work outside Japan, message me on Upwork. In Japan, LINE works too.</p>
+      <a href="https://www.upwork.com/freelancers/~01045739c29ab7858e" class="btn btn-teal">Contact me</a>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid var(--line);background:#FFFFFF">
+    <div class="wrap" style="padding-block:28px;display:flex;flex-direction:column;gap:12px;font-size:13px;color:var(--ink2)">
+      <p style="margin:0">The Lab is for learning and testing. It does not recommend trades or promise profits.</p>
+      <details><summary>Details</summary><p>Nothing here recommends buying or selling any financial product. I do not advise on specific securities, timing or investment decisions, and I do not refer anyone to brokers.</p></details>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between"><span>© EduVest Technologies</span><span style="display:flex;flex-wrap:wrap;gap:16px"><a href="https://lin.ee/ywEmWNR">LINE</a><a href="https://note.com/eduvest">note</a><a href="https://www.youtube.com/@EduVest_CFDFX">YouTube</a></span></div>
+    </div>
+  </footer>
+
+  <a href="https://www.upwork.com/freelancers/~01045739c29ab7858e" class="btn btn-teal float">
+    <svg width="20" height="20" viewBox="0 0 48 48" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 10h32v22H22l-8 7v-7H8z"></path></svg>
+    Contact me
+  </a>
+</div>
+<script>
+document.querySelectorAll('section img').forEach(function(i){i.loading='lazy';i.addEventListener('click',function(e){if(i.closest('a'))return;var d=document.createElement('div');d.className='zoom';var c=new Image();c.src=i.src;c.alt=i.alt;d.appendChild(c);d.addEventListener('click',function(){d.remove()});document.body.appendChild(d);});});
+</script>
+</body>
+</html>

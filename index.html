@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EduVest Technologies｜教育×AIの開発と研修</title>
+<meta name="description" content="教室で30年。数学・理科の教員の目線で、学習アプリ、LINEとホームページの仕組み、事務の自動化、AI研修を行っています。">
+<meta property="og:title" content="EduVest Technologies｜教育×AIの開発と研修">
+<meta property="og:description" content="教室で30年。数学・理科の教員の目線で、学習アプリ、LINEとホームページの仕組み、事務の自動化、AI研修を行っています。">
+<meta property="og:type" content="website">
+<link rel="alternate" hreflang="ja" href="/">
+<link rel="alternate" hreflang="en" href="/en/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&amp;family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0}
+.ev{--navy:#14243B;--paper:#F6F4EE;--teal:#1C8C7A;--teal-d:#167060;--mint:#7FD1C2;--ink2:#3B4A63;--line:#DDD7C9;background:var(--paper);color:var(--navy);font-family:'Noto Sans JP',sans-serif;font-size:16px;line-height:1.8}
+.ev a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding-left:clamp(16px,4vw,32px);padding-right:clamp(16px,4vw,32px)}
+.mincho{font-family:'Shippori Mincho B1',serif;font-weight:800;letter-spacing:0.03em}
+.eyebrow{font-size:12px;letter-spacing:0.28em;font-weight:700;color:var(--teal)}
+.h2{margin:0;font-size:clamp(28px,4.6vw,44px);line-height:1.35;text-wrap:balance}
+.lead{margin:0;color:var(--ink2);max-width:36em}
+.sec{padding-block:clamp(56px,8vw,104px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:0 26px;border-radius:2px;text-decoration:none;font-weight:700;letter-spacing:0.04em}
+.btn-teal{background:var(--teal);color:#FFFFFF !important}
+.btn-ghost-l{border:1px solid rgba(246,244,238,0.55);color:#F6F4EE !important}
+.btn-ghost{border:1px solid var(--navy);color:var(--navy) !important}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(24px,4vw,40px)}
+.pic{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:top;display:block;background:#FFFFFF;border:1px solid var(--line);box-sizing:border-box}
+.tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:0.08em;padding:2px 10px;border-radius:2px}
+.tag-own{background:#E3F2EE;color:var(--teal-d)}
+.tag-client{background:#FBEFDD;color:#8A540C}
+details{border-top:1px solid var(--line);padding-top:8px}
+summary{cursor:pointer;font-size:14px;font-weight:700;color:var(--teal-d);list-style:none;min-height:32px;display:flex;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"＋";margin-left:8px}
+details[open] summary::after{content:"－"}
+details p{margin:6px 0 0;font-size:14px;color:var(--ink2)}
+.need{background:#FFFFFF;border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;gap:14px}
+.need ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.need li{display:flex;gap:10px;align-items:flex-start;font-weight:500}
+.need li::before{content:"";flex:0 0 8px;height:8px;margin-top:10px;background:var(--teal);border-radius:50%}
+.can{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media (max-width:640px){.can{grid-template-columns:repeat(2,1fr)}}
+.can div{background:#FFFFFF;border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;gap:12px;padding:22px 10px 0;text-align:center}
+.can svg{width:44px;height:44px;stroke:var(--navy);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.can span{display:block;width:100%;box-sizing:border-box;background:var(--teal);color:#FFFFFF;font-weight:700;font-size:14px;padding:8px 4px}
+.can a.v{display:block;width:100%;font-size:12px;font-weight:700;color:var(--teal-d);text-decoration:none;padding:8px 4px;border-top:1px solid var(--line)}
+.vids{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px}
+.vid{display:flex;flex-direction:column;gap:12px;background:var(--navy);color:#F6F4EE !important;text-decoration:none;padding:20px;min-height:150px}
+.vid .play{width:44px;height:44px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center}
+.vid b{font-size:16px;line-height:1.5}
+.vid small{color:var(--mint);font-size:12px;letter-spacing:0.08em}
+.can p{margin:0;font-size:13px;line-height:1.5;color:var(--ink2);padding:0 8px;min-height:3em}
+.prof{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px}
+.prof a{display:flex;flex-direction:column;gap:2px;padding:16px 18px;background:#FFFFFF;border:1px solid var(--line);border-left:4px solid var(--teal);text-decoration:none}
+.prof-g{grid-column:1/-1;font-size:12px;font-weight:700;letter-spacing:0.16em;color:var(--teal-d);margin-top:8px}
+.prof b{font-size:16px}
+.prof small{font-size:12px;color:var(--ink2)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:12px;counter-reset:s}
+.steps div{background:#FFFFFF;border-top:3px solid var(--teal);padding:16px;display:flex;flex-direction:column;gap:4px}
+.steps b{font-size:17px}
+.steps small{font-size:13px;color:var(--ink2);line-height:1.6}
+.float{position:fixed;right:16px;bottom:16px;z-index:20;box-shadow:0 8px 24px rgba(20,36,59,0.25)}
+.collage{position:relative;aspect-ratio:5/4;width:100%}
+.collage img{position:absolute;border:4px solid #FFFFFF;box-shadow:0 14px 30px rgba(0,0,0,0.35);background:#FFFFFF;object-fit:cover;object-position:top}
+</style>
+<style>.zoom{position:fixed;inset:0;background:rgba(20,36,59,.92);display:flex;align-items:center;justify-content:center;padding:16px;z-index:50;cursor:zoom-out} .zoom img{max-width:100%;max-height:100%;background:#fff} section img{cursor:zoom-in} @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}} html{scroll-behavior:smooth}</style>
+</head>
+<body>
+<div class="ev">
+
+  <header style="background:var(--navy);color:#F6F4EE">
+    <div class="wrap" style="padding-block:16px;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between">
+      <div style="display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:0.06em">
+        <svg width="24" height="24" viewBox="0 0 64 64" fill="none" stroke="#7FD1C2" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 8h16M27 8v16L13 48c-2 3 0 8 4 8h30c4 0 6-5 4-8L37 24V8"></path><path d="M18 42h28"></path></svg>
+        EduVest Technologies
+      </div>
+      <nav aria-label="メニュー" style="display:flex;flex-wrap:wrap;gap:18px;font-size:14px">
+        <a href="#needs" style="color:#F6F4EE;text-decoration:none">お悩み</a>
+        <a href="#works" style="color:#F6F4EE;text-decoration:none">作品</a>
+        <a href="#price" style="color:#F6F4EE;text-decoration:none">料金</a>
+        <a href="#flow" style="color:#F6F4EE;text-decoration:none">流れ</a>
+        <a href="#about" style="color:#F6F4EE;text-decoration:none">運営者</a>
+        <a href="#lab" style="color:#F6F4EE;text-decoration:none">研究室</a>
+        <a href="/en/" lang="en" style="color:#14243B;background:#7FD1C2;text-decoration:none;font-weight:700;padding:2px 12px;border-radius:999px">English</a>
+      </nav>
+    </div>
+  </header>
+
+  <section style="background:var(--navy);color:#F6F4EE;overflow:hidden">
+    <div class="wrap" style="padding-block:clamp(40px,7vw,88px)">
+      <div class="grid" style="align-items:center">
+        <div style="display:flex;flex-direction:column;gap:22px">
+          <div class="eyebrow" style="color:var(--mint)">EDUCATION × AI</div>
+          <h1 class="mincho" style="margin:0;font-size:clamp(32px,5.2vw,64px);line-height:1.4;text-wrap:balance">教室で30年。<br>この1年、AIと<br>ここまで作れた。</h1>
+          <p style="margin:0;font-size:clamp(17px,2vw,20px);font-weight:700;color:#FFFFFF;border-left:4px solid var(--teal);padding-left:14px">教員歴30年 ／ 自作の学習アプリ6本 ／ 中学数学2,000問</p>
+          <p style="margin:0;color:#C9D3DF;max-width:30em">学習アプリ、LINEとホームページの仕組み、事務の自動化まで。教員の目線で、使う人に合わせて作ります。</p>
+          <div style="display:flex;flex-wrap:wrap;gap:12px">
+            <a href="https://lin.ee/ywEmWNR" class="btn btn-teal">公式LINEで相談する</a>
+            <a href="#works" class="btn btn-ghost-l">作品を見る</a>
+          </div>
+        </div>
+        <div class="collage" aria-label="自作アプリの画面">
+          <img src="img/apps-150.png" alt="日本史と公共の学習アプリ" style="left:0;top:4%;width:62%;aspect-ratio:3/2;transform:rotate(-3deg)">
+          <img src="img/shot-mbd.png" alt="数学バトル道場" style="right:4%;top:0;width:30%;aspect-ratio:9/16;transform:rotate(4deg)">
+          <img src="img/apps-exam.png" alt="検定対策アプリ" style="left:8%;bottom:2%;width:56%;aspect-ratio:3/2;transform:rotate(2deg)">
+          <img src="img/shot-aia.png" alt="AI Adventure Game" style="right:0;bottom:6%;width:30%;aspect-ratio:9/16;transform:rotate(-4deg)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="needs" class="sec">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:clamp(28px,4vw,40px)">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="eyebrow">こんなことで、お困りではありませんか</div>
+        <h2 class="mincho h2">「〜したい」から、ご相談ください</h2>
+      </div>
+      <div class="grid">
+        <div class="need">
+          <span class="tag tag-own" style="align-self:flex-start">個人の方</span>
+          <ul><li>AIの使い方を、基本から覚えたい</li><li>仕事や家のことにAIを使ってみたい</li><li>家で、自分のペースで教わりたい</li></ul>
+          <a href="#price" style="font-size:14px;font-weight:700;color:var(--teal-d)">個別レッスン（1時間 目安2,500円）→</a>
+        </div>
+        <div class="need">
+          <span class="tag tag-own" style="align-self:flex-start">教室・お店・団体の方</span>
+          <ul><li>お知らせ・出欠・会費を、スマホで済ませたい</li><li>ホームページやSNSを、自分で更新したい</li><li>タブレットで、予約や記録を楽にしたい</li></ul>
+          <a href="#works" style="font-size:14px;font-weight:700;color:var(--teal-d)">LINE公式×HPの作品を見る →</a>
+        </div>
+        <div class="need">
+          <span class="tag tag-client" style="align-self:flex-start">企業の方</span>
+          <ul><li>社員がAIを使えるようにしたい</li><li>請求書や書類の確認を、自動にしたい</li><li>表計算の転記や集計を、減らしたい</li></ul>
+          <a href="#price" style="font-size:14px;font-weight:700;color:var(--teal-d)">内容に合わせて、個別にご相談 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="background:#FFFFFF;border-block:1px solid var(--line)">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:clamp(28px,4vw,40px)">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="eyebrow">WHAT WE MAKE</div>
+        <h2 class="mincho h2">作れるもの</h2>
+      </div>
+      <div class="can">
+        <div><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="14" y="4" width="20" height="40" rx="3"></rect><path d="M21 38h6M19 14h10M19 20h10M19 26h6"></path></svg><p>つまずきに合わせた問題と解説</p><span>学習アプリ</span><a class="v" href="https://www.youtube.com/watch?v=qMjjunxlhzo">▶ 1分動画</a></div>
+        <div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 10h32v22H22l-8 7v-7H8z"></path><path d="M15 18h18M15 24h11"></path></svg><p>お知らせ・予約・問い合わせの入口</p><span>LINE公式</span><a class="v" href="https://www.youtube.com/watch?v=7iAfem-RhDg">▶ 1分動画</a></div>
+        <div><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="8" width="38" height="30" rx="2"></rect><path d="M5 15h38M10 22h14M10 28h10M28 22h10v10H28z"></path></svg><p>自分で更新できる形で納品</p><span>ホームページ</span><a class="v" href="https://www.youtube.com/watch?v=GK0YpVRTMvo">▶ 1分動画</a></div>
+        <div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 6h20l8 8v28H10z"></path><path d="M30 6v8h8M16 22h16M16 28h16M16 34h9"></path></svg><p>学年とカリキュラムに合わせて</p><span>教材・問題作成</span><a class="v" href="https://www.youtube.com/watch?v=zBu1aFFSEnA">▶ 1分動画</a></div>
+        <div><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="8" width="36" height="32" rx="2"></rect><path d="M6 18h36M18 8v32M30 8v32M6 29h36"></path></svg><p>転記・集計・通知を自動に</p><span>事務の自動化</span><a class="v" href="https://www.youtube.com/watch?v=eUXMIg_elXQ">▶ 1分動画</a></div>
+        <div><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="7" width="38" height="34" rx="2"></rect><path d="M12 33V24M20 33V17M28 33v-7M36 33V13"></path></svg><p>判断に使う数字を1画面に</p><span>ダッシュボード</span><a class="v" href="https://www.youtube.com/watch?v=CYBck5SvI7Q">▶ 1分動画</a></div>
+        <div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 6h22l8 8v28H8z"></path><circle cx="28" cy="30" r="7"></circle><path d="M33 35l7 7M14 16h12M14 22h8"></path></svg><p>要確認の箇所と伏せ字を表示</p><span>書類のAI読み取り</span><a class="v" href="https://www.youtube.com/watch?v=fFlE6MHsogE">▶ 1分動画</a></div>
+        <div><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="16" r="6"></circle><circle cx="33" cy="16" r="6"></circle><path d="M6 40c1-7 5-11 11-11s10 4 11 11M28 31c1-1 3-2 5-2 6 0 10 4 11 11"></path></svg><p>部署ごとの使い方と実習</p><span>AI研修</span><a class="v" href="https://www.youtube.com/watch?v=NY__kjg3RVY">▶ 1分動画</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="works" class="sec">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:clamp(28px,4vw,40px)">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="eyebrow">WORKS</div>
+        <h2 class="mincho h2">作品</h2>
+        <p class="lead">実際の画面と資料です。お客様の案件は、お名前を出さずに紹介しています。</p>
+      </div>
+      <div class="grid">
+        <article style="display:flex;flex-direction:column;gap:10px"><img class="pic" src="img/apps-150.png" alt="日本史と公共の学習アプリ"><span class="tag tag-own" style="align-self:flex-start">自主制作</span><h3 class="mincho" style="margin:0;font-size:22px">プリントから作る学習アプリ</h3><p style="margin:0;color:var(--ink2)">授業のプリントをもとに、単元ごとの150問アプリに。</p></article>
+        <article style="display:flex;flex-direction:column;gap:10px"><img class="pic" src="img/apps-exam.png" alt="検定対策アプリ"><span class="tag tag-own" style="align-self:flex-start">自主制作</span><h3 class="mincho" style="margin:0;font-size:22px">生徒に合わせた検定対策アプリ</h3><p style="margin:0;color:var(--ink2)">ひとりの目標に合わせて、毎日の10問と復習を。</p></article>
+        <article style="display:flex;flex-direction:column;gap:10px"><img class="pic" src="img/shot-mbd.png" alt="数学バトル道場"><span class="tag tag-own" style="align-self:flex-start">自主制作</span><h3 class="mincho" style="margin:0;font-size:22px">数学バトル道場</h3><p style="margin:0;color:var(--ink2)">中学数学2,000問を、スマホで。</p><a href="https://math-battle-dojo.vercel.app" style="font-size:14px;font-weight:700;color:var(--teal-d)">アプリを開く →</a></article>
+        <article style="display:flex;flex-direction:column;gap:10px"><img class="pic" src="img/shot-aia.png" alt="AI Adventure Game"><span class="tag tag-own" style="align-self:flex-start">教材デモ</span><h3 class="mincho" style="margin:0;font-size:22px">AI Adventure Game</h3><p style="margin:0;color:var(--ink2)">AIへの指示の出し方を、ゲームで学ぶ。</p><a href="https://ai-adventure-lesson1.vercel.app" style="font-size:14px;font-weight:700;color:var(--teal-d)">デモを開く →</a></article>
+        <article style="display:flex;flex-direction:column;gap:10px"><img class="pic" src="img/no36.png" alt="LINE公式のメニュー画面" style="object-position:bottom"><span class="tag tag-own" style="align-self:flex-start">自主運営の団体向け</span><h3 class="mincho" style="margin:0;font-size:22px">LINE公式×HPの連絡の仕組み</h3><p style="margin:0;color:var(--ink2)">お知らせから会費の確認まで、スマホで完結。</p></article>
+        <article style="display:flex;flex-direction:column;gap:10px"><img class="pic" src="img/add05.png" alt="数学の解答解説"><span class="tag tag-own" style="align-self:flex-start">自主制作の教材</span><h3 class="mincho" style="margin:0;font-size:22px">数学の解答・解説プリント</h3><p style="margin:0;color:var(--ink2)">AIで下書きし、教員が仕上げる解答解説。</p></article>
+        <article style="display:flex;flex-direction:column;gap:10px"><img class="pic" src="img/no213.png" alt="数学・理科の問題作成" style="object-fit:contain"><span class="tag tag-client" style="align-self:flex-start">お客様案件（完了）</span><h3 class="mincho" style="margin:0;font-size:22px">数学・理科の問題作成と検証</h3><p style="margin:0;color:var(--ink2)">AIで作った問題を、教員の目で確かめて納品。</p></article>
+        <article style="display:flex;flex-direction:column;gap:10px"><img class="pic" src="img/no147.png" alt="投稿自動化の画面" style="object-fit:contain"><span class="tag tag-client" style="align-self:flex-start">お客様案件（完了）</span><h3 class="mincho" style="margin:0;font-size:22px">SNS投稿の自動化（承認つき）</h3><p style="margin:0;color:var(--ink2)">人が承認したものだけを投稿する仕組み。</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="videos" class="sec" style="padding-top:0">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:clamp(24px,4vw,36px)">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="eyebrow">VIDEOS</div>
+        <h2 class="mincho h2">1分の動画で見る</h2>
+        <p class="lead">サービスごとに、進め方を1分ほどの動画にまとめています。</p>
+      </div>
+      <div class="vids">
+        <a class="vid" href="https://www.youtube.com/watch?v=qMjjunxlhzo"><span class="play"><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4l13 8-13 8z"></path></svg></span><b>教育現場の視点で作る学習アプリ制作</b><small>1:17</small></a>
+        <a class="vid" href="https://www.youtube.com/watch?v=NY__kjg3RVY"><span class="play"><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4l13 8-13 8z"></path></svg></span><b>AI研修と社内定着｜5つの手順で支援</b><small>0:40</small></a>
+        <a class="vid" href="https://www.youtube.com/watch?v=7iAfem-RhDg"><span class="play"><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4l13 8-13 8z"></path></svg></span><b>LINE公式の立ち上げとリピート客づくり</b><small>0:41</small></a>
+        <a class="vid" href="https://www.youtube.com/watch?v=fFlE6MHsogE"><span class="play"><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4l13 8-13 8z"></path></svg></span><b>書類のAI読み取りとチェック・匿名化</b><small>0:39</small></a>
+      </div>
+      <a href="https://www.youtube.com/@EduVest_CFDFX" class="btn btn-ghost" style="align-self:flex-start">YouTubeで動画をすべて見る（26本）</a>
+    </div>
+  </section>
+
+  <section id="price" class="sec" style="background:#FFFFFF;border-block:1px solid var(--line)">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:clamp(28px,4vw,40px)">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="eyebrow">PRICE</div>
+        <h2 class="mincho h2">料金のめやす</h2>
+      </div>
+      <div class="grid">
+        <div style="border:1px solid var(--line);padding:24px;display:grid;gap:12px;background:var(--paper)">
+          <img class="pic" src="img/no106.png" alt="隣で教える様子">
+          <span class="tag tag-own" style="justify-self:start">個人の方</span>
+          <h3 style="margin:0;font-size:20px">AIの使い方 個別レッスン</h3>
+          <div><span style="font-size:13px;color:var(--ink2)">1時間 目安</span> <span class="mincho" style="font-size:clamp(40px,5vw,52px);line-height:1.1">2,500</span><span style="font-size:18px;font-weight:700">円</span></div>
+          <p style="margin:0;font-size:14px;color:var(--ink2)">東海圏は出張できます。オンラインも可。</p>
+          <details><summary>くわしく見る</summary><p>出張は片道30分以内なら無料、それより遠い場合は交通費をいただきます。</p></details>
+          <a href="https://lin.ee/ywEmWNR" class="btn btn-teal" style="justify-self:start">公式LINEで申し込む</a>
+        </div>
+        <div style="border:1px solid var(--line);padding:24px;display:grid;gap:12px;background:var(--paper)">
+          <img class="pic" src="img/no102.png" alt="打ち合わせの様子">
+          <span class="tag tag-client" style="justify-self:start">企業の方</span>
+          <h3 style="margin:0;font-size:20px">研修・開発・業務の自動化</h3>
+          <div class="mincho" style="font-size:clamp(28px,4vw,36px);line-height:1.2">個別にご相談</div>
+          <p style="margin:0;font-size:14px;color:var(--ink2)">内容に合わせて、お見積もりします。</p>
+          <a href="https://lin.ee/ywEmWNR" class="btn btn-ghost" style="justify-self:start">公式LINEで相談する</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="flow" class="sec">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:clamp(24px,4vw,36px)">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="eyebrow">FLOW</div>
+        <h2 class="mincho h2">ご相談から引き継ぎまで</h2>
+        <p class="lead">作って終わりにせず、手順書をつけてお渡しします。</p>
+      </div>
+      <img src="img/ev-hp-02.png" alt="聞く・設計・作る・確かめる・引き継ぐの流れ" style="width:100%;max-width:960px;display:block;background:#FFFFFF;border:1px solid var(--line);padding:16px;box-sizing:border-box">
+      <div class="steps">
+        <div><b>1 聞く</b><small>公式LINEで、やりたいことを教えてください。</small></div>
+        <div><b>2 設計</b><small>画面と手順を、図にして確かめます。</small></div>
+        <div><b>3 作る</b><small>AIも使って、形にします。</small></div>
+        <div><b>4 確かめる</b><small>一緒に試して、直します。</small></div>
+        <div><b>5 引き継ぐ</b><small>手順書をつけて、お渡しします。</small></div>
+      </div>
+      <p style="margin:0;font-size:14px;color:var(--ink2)">期間は内容によって変わります。ご相談のときにお伝えします。</p>
+    </div>
+  </section>
+
+  <section id="about" class="sec" style="background:#FFFFFF;border-block:1px solid var(--line)">
+    <div class="wrap">
+      <div class="grid" style="align-items:start">
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <div class="eyebrow">ABOUT</div>
+          <h2 class="mincho h2">作っている人</h2>
+          <div style="display:flex;align-items:center;gap:16px">
+            <div class="mincho" aria-hidden="true" style="flex:0 0 72px;height:72px;border-radius:50%;background:var(--navy);color:#F6F4EE;display:flex;align-items:center;justify-content:center;font-size:30px">田</div>
+            <div><div class="mincho" style="font-size:26px;line-height:1.3">田中 誠市</div><div style="font-size:13px;color:var(--ink2)">EduVest Technologies 代表／愛知県豊田市</div></div>
+          </div>
+          <p style="margin:0;color:var(--ink2)">教育の仕事を30年。授業と個別指導、予備校の校長、講師の採用と研修、通信制高校のキャンパス運営、自治体の学習支援事業の運営責任者まで、教える側と組織を動かす側の両方を経験してきました。2023年からは、現場で困ってきた手作業をAIで仕組みにする側に回っています。</p>
+          <p class="mincho" style="margin:0;font-size:20px;line-height:1.6;border-left:4px solid var(--teal);padding-left:14px">引き継げないものは、納品物ではない。</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:0">
+          <div style="display:grid;grid-template-columns:7.5em 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line)"><b style="font-size:14px">1995〜2006</b><span>学習塾で授業・個別指導、予備校の校長、講師の採用と研修</span></div>
+          <div style="display:grid;grid-template-columns:7.5em 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line)"><b style="font-size:14px">2006〜</b><span>通信制高校のキャンパス運営、自治体の学習支援事業の運営責任者</span></div>
+          <div style="display:grid;grid-template-columns:7.5em 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line)"><b style="font-size:14px">2018〜</b><span>プロ家庭教師（大学受験）。現在も指導を続けています</span></div>
+          <div style="display:grid;grid-template-columns:7.5em 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line)"><b style="font-size:14px">2023〜</b><span>EduVestとして、AIを使った開発を開始。業務の自動化、Web制作、学習アプリを国内外で受注</span></div>
+          <div style="display:grid;grid-template-columns:7.5em 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line)"><b style="font-size:14px">2026</b><span>社内向けのClaude Code研修を担当（受講者 約20名、開発経験のない方が中心）</span></div>
+          <div style="display:grid;grid-template-columns:7.5em 1fr;gap:12px;padding:14px 0;border-block:1px solid var(--line)"><b style="font-size:14px">学歴・資格</b><span>信州大学 教育学部 卒業／小・中・高の教員免許</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lab" style="background:var(--navy);color:#F6F4EE" class="sec">
+    <div class="wrap">
+      <div class="grid" style="align-items:center">
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <div class="eyebrow" style="color:var(--mint)">AI TRADE LAB</div>
+          <h2 class="mincho h2">EduVest<br>AIトレード研究室</h2>
+          <p style="margin:0;color:#C9D3DF">AIで変わるトレードを、検証しながら学ぶ。うまくいったことも、失敗も記録しています。</p>
+          <div style="display:flex;flex-wrap:wrap;gap:12px"><a href="https://lin.ee/ywEmWNR" class="btn" style="background:#06C755;color:#FFFFFF">公式LINEで受け取る</a><a href="https://note.com/eduvest/m/ma07f9bfd667f" class="btn btn-ghost-l">研究ノート一覧</a><a href="https://jp.tradingview.com/u/EduVest_doro/" class="btn btn-ghost-l">TradingView</a></div>
+        </div>
+        <a href="https://note.com/eduvest/n/n6b90587e8daf"><img src="img/lab.png" alt="AIトレード研究ノート No.03" style="width:100%;display:block"></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="profiles" class="sec" style="padding-bottom:0">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:clamp(20px,3vw,28px)">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="eyebrow">PROFILES</div>
+        <h2 class="mincho h2">各サイトのプロフィール</h2>
+        <p class="lead">受注の実績や評価、公開しているコードは、それぞれのサイトでご覧いただけます。</p>
+      </div>
+      <div class="prof">
+        <div class="prof-g">国内</div>
+        <a href="https://coconala.com/users/4786813"><b>ココナラ</b><small>作品と購入者の評価</small></a>
+        <a href="https://www.lancers.jp/profile/EDUVEST"><b>ランサーズ</b><small>作品と受注の実績</small></a>
+        <a href="https://crowdworks.jp/public/employees/6848836"><b>クラウドワークス</b><small>プロフィールと実績</small></a>
+        <a href="https://jmty.jp/profiles/65cde31d370a68108232d19a"><b>ジモティー</b><small>個別レッスンの募集（東海）</small></a>
+        <div class="prof-g">海外</div>
+        <a href="https://www.upwork.com/freelancers/~01045739c29ab7858e"><b>Upwork</b><small>海外のお客様からの受注</small></a>
+        <a href="https://contra.com/doro_1922_67qff0v0"><b>Contra</b><small>作品とプロフィール</small></a>
+        <a href="https://www.fiverr.com/eduvest"><b>Fiverr</b><small>サービスの出品</small></a>
+        <a href="https://www.mql5.com/en/users/doro1922"><b>MQL5</b><small>MT4／MT5の開発</small></a>
+        <div class="prof-g">副業・複業</div>
+        <div style="display:flex;flex-direction:column;gap:2px;padding:16px 18px;background:#FFFFFF;border:1px solid var(--line);border-left:4px solid var(--line)"><b style="font-size:16px">複業クラウド</b><small style="font-size:12px;color:var(--ink2)">企業からのスカウトで受付（公開ページなし）</small></div>
+        <a href="https://goworkship.com/profile/84864"><b>Workship</b><small>プロフィール</small></a>
+        <a href="https://sokudan.work/top/pros/85008"><b>SOKUDAN</b><small>プロフィール</small></a>
+        <a href="https://youtrust.jp/users/420b4cb681f4fd01992bf8d964499a9d"><b>YOUTRUST</b><small>経歴</small></a>
+        <div class="prof-g">発信・コード</div>
+        <a href="https://github.com/tanaka1922"><b>GitHub</b><small>公開しているコード</small></a>
+        <a href="https://note.com/eduvest"><b>note</b><small>研究ノートと記事</small></a>
+        <a href="https://www.youtube.com/@EduVest_CFDFX"><b>YouTube</b><small>1分の紹介動画とライブ配信</small></a>
+        <a href="https://jp.tradingview.com/u/EduVest_doro/"><b>TradingView</b><small>公開している検証用インジケーター</small></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="sec">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:16px;align-items:flex-start">
+      <h2 class="mincho h2">まずは、話を聞かせてください</h2>
+      <p class="lead">相談は公式LINEのトークで受け付けています。メニューの「お問い合わせ」から送れます。</p>
+      <a href="https://lin.ee/ywEmWNR" class="btn btn-teal">公式LINEで相談する</a>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid var(--line);background:#FFFFFF">
+    <div class="wrap" style="padding-block:28px;display:flex;flex-direction:column;gap:12px;font-size:13px;color:var(--ink2)">
+      <p style="margin:0">研究室の情報は学習と検証のためのものです。売買のおすすめや利益のお約束はしていません。</p>
+      <details><summary>くわしく見る</summary><p>特定の金融商品の売買をおすすめするものではありません。個別の銘柄や売買のタイミング、投資判断のご相談にはお答えしていません。口座開設のご案内もしていません。</p></details>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between"><span>© EduVest Technologies</span><span style="display:flex;flex-wrap:wrap;gap:16px"><a href="https://lin.ee/ywEmWNR">公式LINE</a><a href="https://note.com/eduvest">note</a><a href="https://www.youtube.com/@EduVest_CFDFX">YouTube</a></span></div>
+    </div>
+  </footer>
+
+  <a href="https://lin.ee/ywEmWNR" class="btn btn-teal float">
+    <svg width="20" height="20" viewBox="0 0 48 48" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 10h32v22H22l-8 7v-7H8z"></path></svg>
+    まずは相談してみる
+  </a>
+</div>
+<script>
+document.querySelectorAll('section img').forEach(function(i){i.loading='lazy';i.addEventListener('click',function(e){if(i.closest('a'))return;var d=document.createElement('div');d.className='zoom';var c=new Image();c.src=i.src;c.alt=i.alt;d.appendChild(c);d.addEventListener('click',function(){d.remove()});document.body.appendChild(d);});});
+</script>
+</body>
+</html>
