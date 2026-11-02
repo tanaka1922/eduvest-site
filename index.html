@@ -50,6 +50,15 @@ details p{margin:6px 0 0;font-size:14px;color:var(--ink2)}
 .vid{display:flex;flex-direction:column;gap:12px;background:var(--navy);color:#F6F4EE !important;text-decoration:none;padding:20px;min-height:150px}
 .vid .play{width:44px;height:44px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center}
 .vid b{font-size:16px;line-height:1.5}
+.rns{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px}
+.rn{display:flex;flex-direction:column;gap:10px;padding:20px;border:1px solid rgba(246,244,238,0.22);background:rgba(246,244,238,0.05);color:#F6F4EE}
+.rn small{color:var(--mint);font-size:12px;letter-spacing:0.12em;font-weight:700}
+.rn b{font-size:16px;line-height:1.5}
+.rn p{margin:0;font-size:14px;line-height:1.7;color:#C9D3DF;flex:1}
+.rn-l{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.rn-l a{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#F6F4EE !important;text-decoration:none;border:1px solid rgba(246,244,238,0.35);padding:6px 12px;min-height:32px}
+.rn-l a .play{width:20px;height:20px;border-radius:50%;background:var(--teal);display:inline-flex;align-items:center;justify-content:center;flex:0 0 20px}
+.rn-note{margin:0;font-size:13px;line-height:1.8;color:#C9D3DF;border-left:3px solid var(--mint);padding:10px 14px;background:rgba(0,0,0,0.18)}
 .vid small{color:var(--mint);font-size:12px;letter-spacing:0.08em}
 .can p{margin:0;font-size:13px;line-height:1.5;color:var(--ink2);padding:0 8px;min-height:3em}
 .prof{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px}
@@ -275,6 +284,21 @@ details p{margin:6px 0 0;font-size:14px;color:var(--ink2)}
           <div style="display:flex;flex-wrap:wrap;gap:12px"><a href="https://lin.ee/ywEmWNR" class="btn" style="background:#06C755;color:#FFFFFF">公式LINEで受け取る</a><a href="https://note.com/eduvest/m/ma07f9bfd667f" class="btn btn-ghost-l">研究ノート一覧</a><a href="https://jp.tradingview.com/u/EduVest_doro/" class="btn btn-ghost-l">TradingView</a></div>
         </div>
         <a href="https://note.com/eduvest/n/n6b90587e8daf"><img src="img/lab.png" alt="AIトレード研究ノート No.03" style="width:100%;display:block"></a>
+      </div>
+      <div id="research" style="margin-top:clamp(40px,6vw,64px);padding-top:clamp(32px,5vw,48px);border-top:1px solid rgba(246,244,238,0.18);display:flex;flex-direction:column;gap:20px">
+        <div class="eyebrow" style="color:var(--mint)">AI RESEARCH NOTES</div>
+        <h3 class="mincho" style="margin:0;font-size:clamp(24px,3.4vw,32px);line-height:1.4">AI研究ノート</h3>
+        <p style="margin:0;color:#C9D3DF;max-width:46em">EduVestでは、AIエージェントに投資の画面を読ませ、決めたルールどおりに判断できるかを研究しています。うまくいったことも、失敗したことも、そのまま記録しています。実際のお金は使っていません。</p>
+        <div class="rns">
+        <article class="rn"><small>01</small><b>成功編：AIが注文し、利確まで</b><p>AIエージェントが、TradingViewで注文から決済までの手順を実行できるかを試しました。</p><div class="rn-l"><a href="https://youtu.be/AXsI1dUyY2I"><span class="play"><svg width="10" height="10" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4l13 8-13 8z"></path></svg></span>日本語</a></div></article>
+        <article class="rn"><small>02</small><b>失敗編：10倍速でAIが決済を見逃した</b><p>AIが画面を確かめるのに数秒かかり、10倍速の再生では決済に間に合いませんでした。</p><div class="rn-l"><a href="https://youtu.be/ywsn4K9m9Ck"><span class="play"><svg width="10" height="10" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4l13 8-13 8z"></path></svg></span>日本語</a></div></article>
+        <article class="rn"><small>03</small><b>番外編2：AIにインジケーターを読ませた</b><p>数字は正確に読めましたが、箱や帯は読みにくいと分かりました。そこで、AIが読みやすい画面に整えました。</p><div class="rn-l"><a href="https://youtu.be/XwhJ2nJrAmI"><span class="play"><svg width="10" height="10" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4l13 8-13 8z"></path></svg></span>日本語</a></div></article>
+        <article class="rn"><small>04</small><b>番外編3：AIが画面を見て売買を判断</b><p>決めたルールどおりに、見送りも含めて判断できました。ただし1回の再生、下落が続いた場面だけの結果です。</p><div class="rn-l"><a href="https://youtu.be/9_fJw_IXO8M"><span class="play"><svg width="10" height="10" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4l13 8-13 8z"></path></svg></span>日本語</a><a href="https://youtu.be/-zhhNBM8wCw"><span class="play"><svg width="10" height="10" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4l13 8-13 8z"></path></svg></span>English</a></div></article>
+        <article class="rn"><small>05</small><b>MT5編：AIエージェントがMT5を操作し、EAを回帰テスト</b><p>デモ口座で、AIがEAの回帰テストと安全確認を行いました。263件の売買日付は承認済みの結果と全件一致。自動売買はオフのままです。</p><div class="rn-l"><a href="https://youtu.be/AyAoDUDoBEk"><span class="play"><svg width="10" height="10" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4l13 8-13 8z"></path></svg></span>日本語</a><a href="https://youtu.be/9tP-lNHDp-I"><span class="play"><svg width="10" height="10" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4l13 8-13 8z"></path></svg></span>English</a></div></article>
+        <article class="rn"><small>06</small><b>番外編4：AIが自分でチャートを読みやすく整える</b><p>表示だけを変え、計算は変えずに、直近の高値・安値を数字で読めるようにしました。2画面での読みやすさは未確認です。</p><div class="rn-l"><a href="https://youtu.be/h5u-NpWs00U"><span class="play"><svg width="10" height="10" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4l13 8-13 8z"></path></svg></span>日本語</a><a href="https://youtu.be/4UCvoOBpSok"><span class="play"><svg width="10" height="10" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4l13 8-13 8z"></path></svg></span>English</a></div></article>
+        </div>
+        <p style="margin:0;color:#C9D3DF;font-size:14px">文章での解説は、<a href="https://note.com/eduvest/m/ma07f9bfd667f" style="color:var(--mint);font-weight:700">noteの研究ノート</a>にまとめています。</p>
+        <p class="rn-note">この記録は学習・研究用です。特定の手法・銘柄・売買をおすすめするものではなく、利益を保証するものではありません。実際のお金は使っていません（ペーパートレード／バーリプレイ／デモ口座）。画面：Charts by TradingView、MetaTrader 5。動画の音声はAI合成です。</p>
       </div>
     </div>
   </section>
